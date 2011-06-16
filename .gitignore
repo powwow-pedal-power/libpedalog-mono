@@ -1,0 +1,11 @@
+/[Bb]in
+/[Oo]bj
+*.user
+*.suo
+_Resharper.*
+*.resharper
+*.cache
+*.db
+*~
+*.pidb
+*.userprefs
