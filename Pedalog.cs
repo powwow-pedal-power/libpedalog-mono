@@ -39,7 +39,7 @@ namespace Pwpp.Pedalog
         internal static extern int GetMaxErrorMessage();
 
         [DllImport("libpedalog.dll", EntryPoint = "pedalog_find_devices", CallingConvention = CallingConvention.Cdecl)]
-        internal static extern int FindDevices(Device[] devices);
+        internal static extern int FindDevices([out] Device[] devices);
 
         [DllImport("libpedalog.dll", EntryPoint = "pedalog_read_data", CallingConvention = CallingConvention.Cdecl)]
         internal static extern int ReadData(ref Device device, ref Data data);
