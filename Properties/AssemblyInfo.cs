@@ -33,7 +33,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("libpedalog")]
 [assembly: AssemblyCopyright("Copyright © Dan Haughey 2011")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("en-GB")]
+[assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -54,6 +54,6 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("0.1.*")]
-[assembly: AssemblyFileVersion("0.1.*")]
+[assembly: AssemblyFileVersion("0.1.0.0")]
 
 [assembly: CLSCompliant(true)]
