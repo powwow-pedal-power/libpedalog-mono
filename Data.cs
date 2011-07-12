@@ -23,27 +23,27 @@ using System.Runtime.InteropServices;
 
 namespace Pwpp.Pedalog
 {
-	/// <summary>
-	/// A struct to hold data from a Pedalog device.
-	/// </summary>
+    /// <summary>
+    /// A struct to hold data from a Pedalog device.
+    /// </summary>
     [StructLayout(LayoutKind.Sequential)]
     public struct Data
     {
         public double Voltage;
-	    public double Current;
+        public double Current;
         public double Power;
         public double Energy;
         public double MaxPower;
         public double AvgPower;
         public int Time;
 
-		public string ToReadableString()
-		{
-			return String.Format("voltage: {0}, current: {1}, power: {2}, energy: {3}, max_power: {4}, avg_power: {5}, time: {6}",
-			                     this.Voltage, this.Current,
-			                     this.Power, this.Energy,
-			                     this.MaxPower, this.AvgPower,
-			                     this.Time);
-		}
-	}
+        public string ToReadableString()
+        {
+            return String.Format("voltage: {0}, current: {1}, power: {2}, energy: {3}, max_power: {4}, avg_power: {5}, time: {6}",
+                    this.Voltage, this.Current,
+                    this.Power, this.Energy,
+                    this.MaxPower, this.AvgPower,
+                    this.Time);
+        }
+    }
 }

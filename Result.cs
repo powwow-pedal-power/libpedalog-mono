@@ -22,47 +22,46 @@ using System;
 
 namespace Pwpp.Pedalog
 {
-	/// <summary>
-	/// An enumeration to represent the result of a call to libpedalog.
-	/// </summary>
+    /// <summary>
+    /// An enumeration to represent the result of a call to libpedalog.
+    /// </summary>
     internal enum Result
     {
-		/// <summary>
-		/// The operation was carried out successfully.
-		/// </summary>
+        /// <summary>
+        /// The operation was carried out successfully.
+        /// </summary>
         Ok = 0,
-		
-		/// <summary>
-		/// An unknown error occurred.
-		/// </summary>
-        Unknown = 1,
-		
-		/// <summary>
-		/// The specified Pedalog device was not connected.
-		/// </summary>
-        NoDeviceFound = 2,
-		
-		/// <summary>
-		/// The specified Pedalog device could not be opened for communication.
-		/// This may be a permissions issue.
-		/// </summary>
-        FailedToOpen = 3,
-		
-		/// <summary>
-		/// A bad response was received from the Pedalog device. This may indicate
-		/// a firmware incompatibility.
-		/// </summary>
-        BadResponse = 4,
-		
-		/// <summary>
-		/// The Pedalog device was busy. It may be in use by another application.
-		/// </summary>
-        DeviceBusy = 5,
-		
-		/// <summary>
-		/// An out of memory error was reported by the USB library.
-		/// </summary>
-        OutOfMemory = 6
+
+       /// <summary>
+       /// An unknown error occurred.
+       /// </summary>
+       Unknown = 1,
+
+       /// <summary>
+       /// The specified Pedalog device was not connected.
+       /// </summary>
+       NoDeviceFound = 2,
+
+       /// <summary>
+       /// The specified Pedalog device could not be opened for communication.
+       /// This may be a permissions issue.
+       /// </summary>
+       FailedToOpen = 3,
+
+       /// <summary>
+       /// A bad response was received from the Pedalog device. This may indicate
+       /// a firmware incompatibility.
+       /// </summary>
+       BadResponse = 4,
+
+       /// <summary>
+       /// The Pedalog device was busy. It may be in use by another application.
+       /// </summary>
+       DeviceBusy = 5,
+
+       /// <summary>
+       /// An out of memory error was reported by the USB library.
+       /// </summary>
+       OutOfMemory = 6
     }
 }
-

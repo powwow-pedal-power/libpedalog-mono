@@ -24,9 +24,9 @@ using System.Runtime.InteropServices;
 
 namespace Pwpp.Pedalog
 {
-	/// <summary>
-	/// A class that uses P/Invoke to call functions in libpedalog. 
-	/// </summary>
+    /// <summary>
+    /// A class that uses P/Invoke to call functions in libpedalog. 
+    /// </summary>
     internal static class Pedalog
     {
         [DllImport("libpedalog.dll", EntryPoint = "pedalog_init", CallingConvention = CallingConvention.Cdecl)]

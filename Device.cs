@@ -23,28 +23,28 @@ using System.Runtime.InteropServices;
 
 namespace Pwpp.Pedalog
 {
-	/// <summary>
-	/// A struct that represents a connected Pedalog device.
-	/// </summary>
+    /// <summary>
+    /// A struct that represents a connected Pedalog device.
+    /// </summary>
     [StructLayout(LayoutKind.Sequential)]
     public struct Device
     {
         public int Id;
 
-		/// <summary>
-		/// Static constructor that initialises the libpedalog library.
-		/// </summary>
+        /// <summary>
+        /// Static constructor that initialises the libpedalog library.
+        /// </summary>
         static Device()
         {
             Pedalog.Init();
         }
 
-		/// <summary>
-		/// Finds all the connected Pedalog devices.
-		/// </summary>
-		/// <returns>
-		/// A list of <see cref="Device[]"/> structs representing connected devices.
-		/// </returns>
+        /// <summary>
+        /// Finds all the connected Pedalog devices.
+        /// </summary>
+        /// <returns>
+        /// A list of <see cref="Device[]"/> structs representing connected devices.
+        /// </returns>
         public static Device[] FindAll()
         {
             int maxDevices = Pedalog.GetMaxDevices();
@@ -62,15 +62,15 @@ namespace Pwpp.Pedalog
             return devicesToReturn;
         }
 
-		/// <summary>
-		/// Reads the current data values from a Pedalog device.
-		/// </summary>
-		/// <returns>
-		/// A <see cref="Data"/> struct containing the device's current readings, or
-		/// <c>null</c> if the device has been disconnected. If <c>null</c> is returned,
-		/// <see cref="Device.FindAll"/> should be called again to re-enumerate the
-		/// connected devices.
-		/// </returns>
+        /// <summary>
+        /// Reads the current data values from a Pedalog device.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="Data"/> struct containing the device's current readings, or
+        /// <c>null</c> if the device has been disconnected. If <c>null</c> is returned,
+        /// <see cref="Device.FindAll"/> should be called again to re-enumerate the
+        /// connected devices.
+        /// </returns>
         public Data? ReadData()
         {
             Data data = new Data();
@@ -78,10 +78,10 @@ namespace Pwpp.Pedalog
             var result = (Result)Pedalog.ReadData(ref this, ref data);
             if (result != Result.Ok)
             {
-				if (result == Result.NoDeviceFound)
-				{
-					return null;
-				}
+                if (result == Result.NoDeviceFound)
+                {
+                    return null;
+                }
 
                 throw PedalogException.CreateSpecificExceptionFromError(result);
             }
@@ -89,6 +89,4 @@ namespace Pwpp.Pedalog
             return data;
         }
     }
-
 }
-
