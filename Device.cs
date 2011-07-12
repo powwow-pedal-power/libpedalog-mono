@@ -29,7 +29,7 @@ namespace Pwpp.Pedalog
     [StructLayout(LayoutKind.Sequential)]
     public struct Device
     {
-        public int Id;
+        public int Serial;
 
         /// <summary>
         /// Static constructor that initialises the libpedalog library.
