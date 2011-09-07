@@ -12,3 +12,10 @@ _Resharper.*
 libpedalog.dll
 config.status
 config.log
+/debian/files
+*.log
+*.substvars
+*.debhelper
+/debian/libpedalog-mono
+/debian/tmp
+
