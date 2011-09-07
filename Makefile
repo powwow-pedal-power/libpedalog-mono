@@ -19,10 +19,10 @@
 
 
 
-pkgdatadir = $(datadir)/pwpp-pedalog
-pkgincludedir = $(includedir)/pwpp-pedalog
-pkglibdir = $(libdir)/pwpp-pedalog
-pkglibexecdir = $(libexecdir)/pwpp-pedalog
+pkgdatadir = $(datadir)/libpedalog-mono
+pkgincludedir = $(includedir)/libpedalog-mono
+pkglibdir = $(libdir)/libpedalog-mono
+pkglibexecdir = $(libexecdir)/libpedalog-mono
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -41,8 +41,7 @@ DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(top_srcdir)/configure COPYING install-sh missing
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/expansions.m4 \
-	$(top_srcdir)/configure.ac
+am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
@@ -136,7 +135,7 @@ AUTOHEADER = ${SHELL} /home/dan/pedalog/libpedalog-mono/missing --run autoheader
 AUTOMAKE = ${SHELL} /home/dan/pedalog/libpedalog-mono/missing --run automake-1.11
 AWK = mawk
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"Pwpp.Pedalog\" -DPACKAGE_TARNAME=\"pwpp-pedalog\" -DPACKAGE_VERSION=\"0.1\" -DPACKAGE_STRING=\"Pwpp.Pedalog\ 0.1\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"pwpp-pedalog\" -DVERSION=\"0.1\"
+DEFS = -DPACKAGE_NAME=\"libpedalog-mono\" -DPACKAGE_TARNAME=\"libpedalog-mono\" -DPACKAGE_VERSION=\"0.1\" -DPACKAGE_STRING=\"libpedalog-mono\ 0.1\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libpedalog-mono\" -DVERSION=\"0.1\"
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -152,11 +151,11 @@ LTLIBOBJS =
 MAINT = 
 MAKEINFO = ${SHELL} /home/dan/pedalog/libpedalog-mono/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
-PACKAGE = pwpp-pedalog
+PACKAGE = libpedalog-mono
 PACKAGE_BUGREPORT = 
-PACKAGE_NAME = Pwpp.Pedalog
-PACKAGE_STRING = Pwpp.Pedalog 0.1
-PACKAGE_TARNAME = pwpp-pedalog
+PACKAGE_NAME = libpedalog-mono
+PACKAGE_STRING = libpedalog-mono 0.1
+PACKAGE_TARNAME = libpedalog-mono
 PACKAGE_URL = 
 PACKAGE_VERSION = 0.1
 PATH_SEPARATOR = :
@@ -179,10 +178,7 @@ datadir = ${datarootdir}
 datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
-exec_prefix = /usr/local
-expanded_bindir = /usr/local/bin
-expanded_datadir = /usr/local/share
-expanded_libdir = /usr/local/lib
+exec_prefix = ${prefix}
 host_alias = 
 htmldir = ${docdir}
 includedir = ${prefix}/include
@@ -320,7 +316,7 @@ rm = $(call rm_actual,$(call s2q2s,$1),$(call s2q2s,$2)/$(shell basename '$(call
 DISTCLEANFILES = $(GENERATED_FILES) $(pc_files) $(BUILD_DIR)/*
 pkglib_SCRIPTS = $(ASSEMBLY)
 bin_SCRIPTS = $(BINARIES)
-programfilesdir = ${exec_prefix}/lib/pwpp-pedalog
+programfilesdir = ${exec_prefix}/lib/libpedalog-mono
 programfiles_DATA = $(PROGRAMFILES)
 linuxpkgconfigdir = ${exec_prefix}/lib/pkgconfig
 linuxpkgconfig_DATA = $(LINUX_PKGCONFIG)

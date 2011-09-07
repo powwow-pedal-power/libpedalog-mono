@@ -1,6 +1,6 @@
 #! /bin/sh
 
-PROJECT=Pwpp.Pedalog
+PROJECT=libpedalog-mono
 FILE=
 CONFIGURE=configure.ac
 
