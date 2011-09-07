@@ -10,3 +10,5 @@ _Resharper.*
 *.pidb
 *.userprefs
 libpedalog.dll
+config.status
+config.log
