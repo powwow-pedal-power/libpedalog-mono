@@ -1,3 +1,9 @@
+libpedalog-mono (0.2-2) maverick; urgency=low
+
+  * Added build dependency on pkg-config
+
+ -- Dan Haughey <dan@powwow-pedal-power.org.uk>  Thu, 22 Sep 2011 19:32:00 +0100
+
 libpedalog-mono (0.2-1) maverick; urgency=low
 
   * Initial release
